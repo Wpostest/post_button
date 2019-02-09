@@ -1,0 +1,168 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.post-btn{
+    margin-top: 250px; //FOR CHANGE 
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: rgb(40, 98, 223);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+    position: relative;
+
+    &:hover .post-btn-hover{
+        width: 150px;
+        height: 150px;
+    }
+
+    .post-btn-count{
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .post-btn-hover{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0px;
+        height: 0px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        transition: .5s;
+        z-index: -1;
+        overflow: hidden;
+        opacity: .75;
+
+        .post-btn-hover__element-1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            border-width: 76px;
+            border-style: solid;
+            border-radius: 50%;
+            border-color: blue transparent transparent transparent;
+        }
+
+        .post-btn-hover__element-2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(72deg);
+            border-width: 76px;
+            border-style: solid;
+            border-radius: 50%;
+            border-color: red transparent transparent transparent;
+        }
+
+        .post-btn-hover__element-3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(144deg);
+            border-width: 76px;
+            border-style: solid;
+            border-radius: 50%;
+            border-color: green transparent transparent transparent;
+        }
+
+        .post-btn-hover__element-4{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(216deg);
+            border-width: 76px;
+            border-style: solid;
+            border-radius: 50%;
+            border-color: yellow transparent transparent transparent;
+        }
+
+        .post-btn-hover__element-5{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(288deg);
+            border-width: 76px;
+            border-style: solid;
+            border-radius: 50%;
+            border-color: lightblue transparent transparent transparent;
+        }
+
+        .post-btn-hover__element-6{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-139%, -90%) rotate(-37deg);
+            width: 0; 
+            height: 0; 
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 150px solid blue;
+        }
+
+    }
+
+    .post-btn-hover__emoticons{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+
+        &>button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: none;
+            background: none;
+            font-size: 2rem;
+            transition: .5s;
+        }
+
+        
+    }
+
+    &:hover{
+
+        .post-btn-hover__emoticon-1{
+            transform: translate(17px, 17px);
+            transition-delay: .2s;
+            background: pink;
+        }
+
+        .post-btn-hover__emoticon-2{
+            transform: translate(26px, -42px);
+            transition-delay: .4s;
+            background: yellow;
+        }
+
+        .post-btn-hover__emoticon-3{
+            transform: translate(-26px, -65px);
+            transition-delay: .6s;
+            background: lightcoral;
+        }
+
+        .post-btn-hover__emoticon-4{
+            transform: translate(-42px, 25px);
+            transition-delay: 1s;
+            background: lightgreen;
+        }
+
+        .post-btn-hover__emoticon-5{
+            transform: translate(-65px, -26px);
+            transition-delay: .8s;
+            background: red;
+        }
+    }
+}

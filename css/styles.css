@@ -1,0 +1,216 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+button {
+  outline: none; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.post-btn {
+  margin-top: 250px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #2862df;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  position: relative; }
+  .post-btn:hover .post-btn-hover {
+    width: 150px;
+    height: 150px; }
+  .post-btn .post-btn-count {
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; }
+  .post-btn .post-btn-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 50%;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    z-index: -1;
+    overflow: hidden;
+    opacity: .75; }
+    .post-btn .post-btn-hover .post-btn-hover__element-1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          -ms-transform: translate(-50%, -50%) rotate(0deg);
+              transform: translate(-50%, -50%) rotate(0deg);
+      border-width: 76px;
+      border-style: solid;
+      border-radius: 50%;
+      border-color: blue transparent transparent transparent; }
+    .post-btn .post-btn-hover .post-btn-hover__element-2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(72deg);
+          -ms-transform: translate(-50%, -50%) rotate(72deg);
+              transform: translate(-50%, -50%) rotate(72deg);
+      border-width: 76px;
+      border-style: solid;
+      border-radius: 50%;
+      border-color: red transparent transparent transparent; }
+    .post-btn .post-btn-hover .post-btn-hover__element-3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(144deg);
+          -ms-transform: translate(-50%, -50%) rotate(144deg);
+              transform: translate(-50%, -50%) rotate(144deg);
+      border-width: 76px;
+      border-style: solid;
+      border-radius: 50%;
+      border-color: green transparent transparent transparent; }
+    .post-btn .post-btn-hover .post-btn-hover__element-4 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(216deg);
+          -ms-transform: translate(-50%, -50%) rotate(216deg);
+              transform: translate(-50%, -50%) rotate(216deg);
+      border-width: 76px;
+      border-style: solid;
+      border-radius: 50%;
+      border-color: yellow transparent transparent transparent; }
+    .post-btn .post-btn-hover .post-btn-hover__element-5 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) rotate(288deg);
+          -ms-transform: translate(-50%, -50%) rotate(288deg);
+              transform: translate(-50%, -50%) rotate(288deg);
+      border-width: 76px;
+      border-style: solid;
+      border-radius: 50%;
+      border-color: lightblue transparent transparent transparent; }
+    .post-btn .post-btn-hover .post-btn-hover__element-6 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-139%, -90%) rotate(-37deg);
+          -ms-transform: translate(-139%, -90%) rotate(-37deg);
+              transform: translate(-139%, -90%) rotate(-37deg);
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 150px solid blue; }
+  .post-btn .post-btn-hover__emoticons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1; }
+    .post-btn .post-btn-hover__emoticons > button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: none;
+      background: none;
+      font-size: 2rem;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+  .post-btn:hover .post-btn-hover__emoticon-1 {
+    -webkit-transform: translate(17px, 17px);
+        -ms-transform: translate(17px, 17px);
+            transform: translate(17px, 17px);
+    -webkit-transition-delay: .2s;
+         -o-transition-delay: .2s;
+            transition-delay: .2s;
+    background: pink; }
+  .post-btn:hover .post-btn-hover__emoticon-2 {
+    -webkit-transform: translate(26px, -42px);
+        -ms-transform: translate(26px, -42px);
+            transform: translate(26px, -42px);
+    -webkit-transition-delay: .4s;
+         -o-transition-delay: .4s;
+            transition-delay: .4s;
+    background: yellow; }
+  .post-btn:hover .post-btn-hover__emoticon-3 {
+    -webkit-transform: translate(-26px, -65px);
+        -ms-transform: translate(-26px, -65px);
+            transform: translate(-26px, -65px);
+    -webkit-transition-delay: .6s;
+         -o-transition-delay: .6s;
+            transition-delay: .6s;
+    background: lightcoral; }
+  .post-btn:hover .post-btn-hover__emoticon-4 {
+    -webkit-transform: translate(-42px, 25px);
+        -ms-transform: translate(-42px, 25px);
+            transform: translate(-42px, 25px);
+    -webkit-transition-delay: 1s;
+         -o-transition-delay: 1s;
+            transition-delay: 1s;
+    background: lightgreen; }
+  .post-btn:hover .post-btn-hover__emoticon-5 {
+    -webkit-transform: translate(-65px, -26px);
+        -ms-transform: translate(-65px, -26px);
+            transform: translate(-65px, -26px);
+    -webkit-transition-delay: .8s;
+         -o-transition-delay: .8s;
+            transition-delay: .8s;
+    background: red; }
+
+/*# sourceMappingURL=styles.css.map */
