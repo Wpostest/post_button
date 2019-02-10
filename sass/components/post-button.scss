@@ -1,30 +1,19 @@
 body{
     display: flex;
     justify-content: center;
+    background: #fff;
 }
 .post-btn{
     margin-top: 250px; //FOR CHANGE 
     width: 50px;
     height: 50px;
-    border: none;
     border-radius: 50%;
-    background: rgb(40, 98, 223);
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
     cursor: pointer;
     position: relative;
 
     &:hover .post-btn-hover{
         width: 150px;
         height: 150px;
-    }
-
-    .post-btn-count{
-        text-align: center;
-        line-height: 50px;
-        color: #fff;
-        font-size: 1rem;
-        font-weight: bold;
-        font-family: 'Roboto', sans-serif;
     }
 
     .post-btn-hover{
@@ -36,9 +25,8 @@ body{
         transform: translate(-50%, -50%);
         border-radius: 50%;
         transition: .5s;
-        z-index: -1;
-        overflow: hidden;
         opacity: .75;
+        overflow: hidden;
 
         .post-btn-hover__element-1{
             position: absolute;
@@ -109,28 +97,50 @@ body{
 
     }
 
-    .post-btn-hover__emoticons{
+    button{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: -1;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+        background: none;
+        font-size: 2rem;
+        transition: .5s;
+        z-index: 3;
+    }
 
-        &>button{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            border: none;
-            background: none;
-            font-size: 2rem;
-            transition: .5s;
-        }
+    .post-btn-hover__emoticon-1{
+        background: pink;
 
-        
+        &:hover ~ .post-btn-hover .post-btn-hover__element-3{ border-color: lightcoral transparent transparent transparent; }
+    }
+
+    .post-btn-hover__emoticon-2{
+        background: yellow;
+
+        &:hover ~ .post-btn-hover .post-btn-hover__element-2 { border-color: lightcoral transparent transparent transparent; }
+    }
+
+    .post-btn-hover__emoticon-3{
+        background: lightcoral;
+
+        &:hover ~ .post-btn-hover .post-btn-hover__element-1 { border-color: lightcoral transparent transparent transparent; }
+        &:hover ~ .post-btn-hover .post-btn-hover__element-6 { border-top: 150px solid lightcoral }
+    }
+
+    .post-btn-hover__emoticon-4{
+        background: lightgreen;
+
+        &:hover ~ .post-btn-hover .post-btn-hover__element-4 { border-color: lightcoral transparent transparent transparent; }
+    }
+
+    .post-btn-hover__emoticon-5{
+        background: red;
+
+        &:hover ~ .post-btn-hover .post-btn-hover__element-5 { border-color: lightcoral transparent transparent transparent; }
     }
 
     &:hover{
@@ -138,31 +148,46 @@ body{
         .post-btn-hover__emoticon-1{
             transform: translate(17px, 17px);
             transition-delay: .2s;
-            background: pink;
         }
 
         .post-btn-hover__emoticon-2{
             transform: translate(26px, -42px);
             transition-delay: .4s;
-            background: yellow;
         }
 
         .post-btn-hover__emoticon-3{
             transform: translate(-26px, -65px);
             transition-delay: .6s;
-            background: lightcoral;
         }
 
         .post-btn-hover__emoticon-4{
             transform: translate(-42px, 25px);
             transition-delay: 1s;
-            background: lightgreen;
         }
 
         .post-btn-hover__emoticon-5{
             transform: translate(-65px, -26px);
             transition-delay: .8s;
-            background: red;
+        }
+    }
+
+    .post-btn-index{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: rgb(40, 98, 223);
+        box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+        cursor: pointer;
+        z-index: 3;
+
+        .post-btn-count{
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
         }
     }
 }

@@ -42,29 +42,19 @@ body {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  background: #fff; }
 
 .post-btn {
   margin-top: 250px;
   width: 50px;
   height: 50px;
-  border: none;
   border-radius: 50%;
-  background: #2862df;
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   position: relative; }
   .post-btn:hover .post-btn-hover {
     width: 150px;
     height: 150px; }
-  .post-btn .post-btn-count {
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif; }
   .post-btn .post-btn-hover {
     position: absolute;
     top: 50%;
@@ -78,9 +68,8 @@ body {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
-    z-index: -1;
-    overflow: hidden;
-    opacity: .75; }
+    opacity: .75;
+    overflow: hidden; }
     .post-btn .post-btn-hover .post-btn-hover__element-1 {
       position: absolute;
       top: 50%;
@@ -148,69 +137,96 @@ body {
       border-left: 25px solid transparent;
       border-right: 25px solid transparent;
       border-top: 150px solid blue; }
-  .post-btn .post-btn-hover__emoticons {
+  .post-btn button {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    z-index: -1; }
-    .post-btn .post-btn-hover__emoticons > button {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      border: none;
-      background: none;
-      font-size: 2rem;
-      -webkit-transition: .5s;
-      -o-transition: .5s;
-      transition: .5s; }
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    z-index: 3; }
+  .post-btn .post-btn-hover__emoticon-1 {
+    background: pink; }
+    .post-btn .post-btn-hover__emoticon-1:hover ~ .post-btn-hover .post-btn-hover__element-3 {
+      border-color: lightcoral transparent transparent transparent; }
+  .post-btn .post-btn-hover__emoticon-2 {
+    background: yellow; }
+    .post-btn .post-btn-hover__emoticon-2:hover ~ .post-btn-hover .post-btn-hover__element-2 {
+      border-color: lightcoral transparent transparent transparent; }
+  .post-btn .post-btn-hover__emoticon-3 {
+    background: lightcoral; }
+    .post-btn .post-btn-hover__emoticon-3:hover ~ .post-btn-hover .post-btn-hover__element-1 {
+      border-color: lightcoral transparent transparent transparent; }
+    .post-btn .post-btn-hover__emoticon-3:hover ~ .post-btn-hover .post-btn-hover__element-6 {
+      border-top: 150px solid lightcoral; }
+  .post-btn .post-btn-hover__emoticon-4 {
+    background: lightgreen; }
+    .post-btn .post-btn-hover__emoticon-4:hover ~ .post-btn-hover .post-btn-hover__element-4 {
+      border-color: lightcoral transparent transparent transparent; }
+  .post-btn .post-btn-hover__emoticon-5 {
+    background: red; }
+    .post-btn .post-btn-hover__emoticon-5:hover ~ .post-btn-hover .post-btn-hover__element-5 {
+      border-color: lightcoral transparent transparent transparent; }
   .post-btn:hover .post-btn-hover__emoticon-1 {
     -webkit-transform: translate(17px, 17px);
         -ms-transform: translate(17px, 17px);
             transform: translate(17px, 17px);
     -webkit-transition-delay: .2s;
          -o-transition-delay: .2s;
-            transition-delay: .2s;
-    background: pink; }
+            transition-delay: .2s; }
   .post-btn:hover .post-btn-hover__emoticon-2 {
     -webkit-transform: translate(26px, -42px);
         -ms-transform: translate(26px, -42px);
             transform: translate(26px, -42px);
     -webkit-transition-delay: .4s;
          -o-transition-delay: .4s;
-            transition-delay: .4s;
-    background: yellow; }
+            transition-delay: .4s; }
   .post-btn:hover .post-btn-hover__emoticon-3 {
     -webkit-transform: translate(-26px, -65px);
         -ms-transform: translate(-26px, -65px);
             transform: translate(-26px, -65px);
     -webkit-transition-delay: .6s;
          -o-transition-delay: .6s;
-            transition-delay: .6s;
-    background: lightcoral; }
+            transition-delay: .6s; }
   .post-btn:hover .post-btn-hover__emoticon-4 {
     -webkit-transform: translate(-42px, 25px);
         -ms-transform: translate(-42px, 25px);
             transform: translate(-42px, 25px);
     -webkit-transition-delay: 1s;
          -o-transition-delay: 1s;
-            transition-delay: 1s;
-    background: lightgreen; }
+            transition-delay: 1s; }
   .post-btn:hover .post-btn-hover__emoticon-5 {
     -webkit-transform: translate(-65px, -26px);
         -ms-transform: translate(-65px, -26px);
             transform: translate(-65px, -26px);
     -webkit-transition-delay: .8s;
          -o-transition-delay: .8s;
-            transition-delay: .8s;
-    background: red; }
+            transition-delay: .8s; }
+  .post-btn .post-btn-index {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2862df;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    z-index: 3; }
+    .post-btn .post-btn-index .post-btn-count {
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */
