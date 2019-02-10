@@ -16,6 +16,7 @@ body{
         height: 150px;
     }
 
+    //POST BUTTON ELEMENT WRAPPER
     .post-btn-hover{
         position: absolute;
         top: 50%;
@@ -83,6 +84,7 @@ body{
             border-color: lightblue transparent transparent transparent;
         }
 
+        //TRIANGLE ELEMENT
         .post-btn-hover__element-6{
             position: absolute;
             top: 50%;
@@ -97,6 +99,7 @@ body{
 
     }
 
+    //ALL STYLES FOR BUTTON
     button{
         position: absolute;
         top: 50%;
@@ -112,6 +115,7 @@ body{
         z-index: 3;
     }
 
+    //EMOTICONS WITH HOVER, HOVER CHANGE BG post-btn-hover__element 
     .post-btn-hover__emoticon-1{
         background: pink;
 
@@ -143,6 +147,7 @@ body{
         &:hover ~ .post-btn-hover .post-btn-hover__element-5 { border-color: lightcoral transparent transparent transparent; }
     }
 
+    //EMOTICONS HOVER EFECT
     &:hover{
 
         .post-btn-hover__emoticon-1{
